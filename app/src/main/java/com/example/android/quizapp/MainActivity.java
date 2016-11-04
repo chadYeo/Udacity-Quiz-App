@@ -4,7 +4,8 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
+
+import com.example.android.quizapp.fragment.WelcomeFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,16 +15,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    }
-    public void selectFrag(View view) {
-
-        QuizFragment qf = new QuizFragment();
-
         FragmentManager fm = getSupportFragmentManager();
-
         FragmentTransaction ft = fm.beginTransaction();
-        ft.replace(R.id.fragment_container, qf);
+        ft.add(R.id.fragment_container, new WelcomeFragment());
         ft.addToBackStack(null);
         ft.commit();
     }
+
 }

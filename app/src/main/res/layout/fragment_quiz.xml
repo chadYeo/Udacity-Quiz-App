@@ -12,7 +12,6 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/quizNumberOne"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -23,7 +22,7 @@
                 android:text="@string/first_quiz_question" />
 
             <EditText
-                android:id="@+id/answerOne"
+                android:id="@+id/Q1_A_editText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="First and Last Name" />
@@ -31,7 +30,6 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/quizNumberTwo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -41,28 +39,34 @@
                 android:layout_height="match_parent"
                 android:text="@string/second_quiz_question" />
 
-            <RadioButton
-                android:id="@+id/radioButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New RadioButton" />
+            <RadioGroup
+                android:id="@+id/Q2_radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <RadioButton
-                android:id="@+id/radioButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New RadioButton" />
+                <RadioButton
+                    android:id="@+id/Q2_Opt1_radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New RadioButton" />
 
-            <RadioButton
-                android:id="@+id/radioButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New RadioButton" />
+                <RadioButton
+                    android:id="@+id/Q2_Opt2_radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/Q2_Opt3_radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New RadioButton" />
+
+            </RadioGroup>
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/quizNumberThree"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -73,27 +77,26 @@
                 android:text="@string/third_quiz_question" />
 
             <CheckBox
+                android:id="@+id/Q3_Opt1_checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New CheckBox"
-                android:id="@+id/checkBox" />
+                android:text="New CheckBox" />
 
             <CheckBox
+                android:id="@+id/Q3_Opt2_checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New CheckBox"
-                android:id="@+id/checkBox" />
+                android:text="New CheckBox" />
 
             <CheckBox
+                android:id="@+id/Q3_Opt3_checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New CheckBox"
-                android:id="@+id/checkBox" />
+                android:text="New CheckBox" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/quizNumberFour"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -104,7 +107,7 @@
                 android:text="@string/fourth_quiz_question" />
 
             <EditText
-                android:id="@+id/answerOne"
+                android:id="@+id/Q4_A_editText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="First and Last Name" />
@@ -112,7 +115,6 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/quizNumberFive"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -122,28 +124,33 @@
                 android:layout_height="wrap_content"
                 android:text="@string/fifth_quiz_question" />
 
-            <RadioButton
-                android:id="@+id/radioButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New RadioButton" />
+            <RadioGroup
+                android:id="@+id/Q5_radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <RadioButton
-                android:id="@+id/radioButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New RadioButton" />
+                <RadioButton
+                    android:id="@+id/Q5_Opt1_radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New RadioButton" />
 
-            <RadioButton
-                android:id="@+id/radioButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New RadioButton" />
+                <RadioButton
+                    android:id="@+id/Q5_Opt2_radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/Q5_Opt3_radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New RadioButton" />
+            </RadioGroup>
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/quizNumberSix"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -154,30 +161,30 @@
                 android:text="@string/sixth_quiz_question" />
 
             <CheckBox
+                android:id="@+id/Q6_Opt1_checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New CheckBox"
-                android:id="@+id/checkBox" />
+                android:text="New CheckBox" />
 
             <CheckBox
+                android:id="@+id/Q6_Opt2_checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New CheckBox"
-                android:id="@+id/checkBox" />
+                android:text="New CheckBox" />
 
             <CheckBox
+                android:id="@+id/Q6_Opt3_checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New CheckBox"
-                android:id="@+id/checkBox" />
+                android:text="New CheckBox" />
 
         </LinearLayout>
 
         <Button
+            android:id="@+id/submit_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Submit"
-            android:id="@+id/button" />
+            android:text="Submit" />
 
 
     </LinearLayout>

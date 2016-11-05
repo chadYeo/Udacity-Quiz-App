@@ -4,6 +4,12 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="welcome_textView">Welcome to Quiz App</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Quiz Questions -->
+    <string name="first_quiz_question">Q1. What is your name?</string>
+    <string name="second_quiz_question">Q2. Which of the following option is correct?</string>
+    <string name="third_quiz_question">Q3. Select the correct answers</string>
+    <string name="fourth_quiz_question">Q4. Which of the following option is correct?</string>
+    <string name="fifth_quiz_question">Q5. Which of the following option is correct?</string>
+    <string name="sixth_quiz_question">Q6. Which of the following option is correct?</string>
+    <!-- Quiz Answers -->
 </resources>

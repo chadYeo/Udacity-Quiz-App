@@ -20,7 +20,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/first_quiz_question" />
+                style="@style/QuestionAppearance"
+                android:text="@string/Q1" />
 
             <EditText
                 android:id="@+id/Q1_A_editText"
@@ -41,7 +42,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/second_quiz_question" />
+                style="@style/QuestionAppearance"
+                android:text="@string/Q2" />
 
             <RadioGroup
                 android:id="@+id/Q2_radioGroup"
@@ -52,19 +54,19 @@
                     android:id="@+id/Q2_Opt1_radioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New RadioButton" />
+                    android:text="@string/Q2_Opt1" />
 
                 <RadioButton
                     android:id="@+id/Q2_Opt2_radioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New RadioButton" />
+                    android:text="@string/Q2_Opt2" />
 
                 <RadioButton
                     android:id="@+id/Q2_Opt3_radioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New RadioButton" />
+                    android:text="@string/Q2_Opt3" />
 
             </RadioGroup>
 
@@ -79,25 +81,29 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/third_quiz_question" />
+                style="@style/QuestionAppearance"
+                android:text="@string/Q3" />
 
             <CheckBox
                 android:id="@+id/Q3_Opt1_checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New CheckBox" />
+                android:text="@string/Q3_Opt1"
+                android:checked="false"/>
 
             <CheckBox
                 android:id="@+id/Q3_Opt2_checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New CheckBox" />
+                android:text="@string/Q3_Opt2"
+                android:checked="false" />
 
             <CheckBox
                 android:id="@+id/Q3_Opt3_checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New CheckBox" />
+                android:text="@string/Q3_Opt3"
+                android:checked="false" />
 
         </LinearLayout>
 
@@ -110,14 +116,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/fourth_quiz_question" />
+                style="@style/QuestionAppearance"
+                android:text="@string/Q4" />
 
             <EditText
                 android:id="@+id/Q4_A_editText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
-                android:hint="First and Last Name" />
+                android:hint="Your Answer Here" />
 
         </LinearLayout>
 
@@ -130,7 +137,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/fifth_quiz_question" />
+                style="@style/QuestionAppearance"
+                android:text="@string/Q5" />
 
             <RadioGroup
                 android:id="@+id/Q5_radioGroup"
@@ -141,19 +149,19 @@
                     android:id="@+id/Q5_Opt1_radioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New RadioButton" />
+                    android:text="@string/Q5_Opt1" />
 
                 <RadioButton
                     android:id="@+id/Q5_Opt2_radioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New RadioButton" />
+                    android:text="@string/Q5_Opt2" />
 
                 <RadioButton
                     android:id="@+id/Q5_Opt3_radioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="New RadioButton" />
+                    android:text="@string/Q5_Opt3" />
             </RadioGroup>
 
         </LinearLayout>
@@ -167,25 +175,27 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/sixth_quiz_question" />
+                style="@style/QuestionAppearance"
+                android:text="@string/Q6" />
 
             <CheckBox
                 android:id="@+id/Q6_Opt1_checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New CheckBox" />
+                android:text="@string/Q6_Opt1" />
 
             <CheckBox
                 android:id="@+id/Q6_Opt2_checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New CheckBox" />
+                android:text="@string/Q6_Opt2" />
 
             <CheckBox
                 android:id="@+id/Q6_Opt3_checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New CheckBox" />
+                android:text="@string/Q6_Opt3"
+                android:checked="false" />
 
         </LinearLayout>
 

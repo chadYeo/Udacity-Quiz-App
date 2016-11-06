@@ -45,18 +45,18 @@ public class WelcomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                //if (mNameEditText.getText().toString().isEmpty()) {
-                //    Toast.makeText(mContext, "You forgot to put your name", Toast.LENGTH_SHORT).show();
-                //} else if (mEmailEditText.getText().toString().isEmpty()) {
-                //    Toast.makeText(mContext, "You forgot to put your Email", Toast.LENGTH_SHORT).show();
-                //} else {
+                if (mNameEditText.getText().toString().isEmpty()) {
+                    Toast.makeText(mContext, "You forgot to put your name", Toast.LENGTH_SHORT).show();
+                } else if (mEmailEditText.getText().toString().isEmpty()) {
+                    Toast.makeText(mContext, "You forgot to put your Email", Toast.LENGTH_SHORT).show();
+                } else {
                     QuizFragment quizFragment = new QuizFragment();
                     FragmentTransaction ft = getFragmentManager().beginTransaction();
                     ft.replace(R.id.fragment_container, quizFragment);
                     ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
                     ft.addToBackStack(null);
                     ft.commit();
-                //}
+                }
             }
         });
         return v;
